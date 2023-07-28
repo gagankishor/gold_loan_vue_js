@@ -7,13 +7,13 @@ module.exports = defineConfig({
     proxy: {
       '/api': {
         // target: 'https://projects.rudrakshatech.com/spay_api/public/',
-        target: 'https://goldloanapi.onrender.com/',
+        target: 'https://goldloanbackend.onrender.com',
 
         ws: true,
         changeOrigin: true
       },
       '/nodeapi': {
-        target: 'https://goldloanapi.onrender.com/',
+        target: 'https://goldloanbackend.onrender.com/',
         ws: true,
         changeOrigin: true
       },

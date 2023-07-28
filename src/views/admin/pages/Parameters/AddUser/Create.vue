@@ -96,7 +96,7 @@ export default {
   methods: {
     add_user() {
       
-      axios.post('http://127.0.0.1:3001/api/alluser', {
+      axios.post('https://goldloanbackend.onrender.com/api/alluser', {
         add_name: this.add_name,
         
         email: this.email,

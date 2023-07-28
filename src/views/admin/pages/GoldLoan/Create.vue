@@ -415,7 +415,7 @@ export default {
       pdfMake.createPdf(docDefinition).download();
     },
     fetchData() {
-      axios.get('http://127.0.0.1:3001/api/kycupdate')
+      axios.get('https://goldloanbackend.onrender.com/api/kycupdate')
         .then(response => {
           this.tableData = response.data;
         })
@@ -424,7 +424,7 @@ export default {
         })
     },
     fetchData1() {
-      axios.get('http://127.0.0.1:3001/api/kycupdate/')
+      axios.get('https://goldloanbackend.onrender.com/api/kycupdate/')
         .then(response => {
           this.id = response.data.id
         })
@@ -435,7 +435,7 @@ export default {
 
 
     submitForm() {
-      axios.post('http://127.0.0.1:3001/api/goldloan', {
+      axios.post('https://goldloanbackend.onrender.com/api/goldloan', {
         name: this.name,
         Aadhar: this.Aadhar,
         pan: this.pan,

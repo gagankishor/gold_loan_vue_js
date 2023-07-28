@@ -409,7 +409,7 @@ export default {
       console.log(this.selectedFile1);
         console.log(this.selectedFile2);
         console.log(this.selectedFile3);
-      axios.put(`http://127.0.0.1:3001/api/kyc/${this.$route.params.id}`, {
+      axios.put(`https://goldloanbackend.onrender.com/api/kyc/${this.$route.params.id}`, {
         name: this.name,
         
         fname: this.fname,

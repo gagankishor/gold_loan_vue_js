@@ -299,7 +299,7 @@ export default {
       console.log(this.selectedFile1);
       console.log(this.selectedFile2);
       console.log(this.selectedFile3);
-      axios.post('http://127.0.0.1:3001/api/kycupdate', {
+      axios.post('https://goldloanbackend.onrender.com/api/kycupdate', {
         name: this.name,
 
         fname: this.fname,

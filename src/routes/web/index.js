@@ -1,6 +1,6 @@
 export const web_routes = [
   {
-    path: "/",
-    component: () => import("@/views/web/Layout"),
+    path: "/admin-xpanel",
+    component: () => import("@/views/admin/pages/Dashboard"),
   },
 ];

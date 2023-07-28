@@ -282,7 +282,7 @@ export default {
 
   methods: {
     fetchData() {
-      axios.get('http://127.0.0.1:3001/api/goldloan')
+      axios.get('https://goldloanbackend.onrender.com/api/goldloan')
         .then(response => {
           this.tableData = response.data;
         })

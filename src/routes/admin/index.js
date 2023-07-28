@@ -6,7 +6,7 @@ export const admin_routes = [
   },
   
   {
-    path: "/admin-xpanel",
+    path: "/",
     component: () => import("@/views/admin/Layout"),
     // meta: {
     //   middleware: "auth"

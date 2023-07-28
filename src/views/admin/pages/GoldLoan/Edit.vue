@@ -405,7 +405,7 @@ export default {
   methods: {
 
     fetchData() {
-      axios.get('http://127.0.0.1:3001/api/kycupdate')
+      axios.get('https://goldloanbackend.onrender.com/api/kycupdate')
         .then(response => {
           this.tableData = response.data;
         })
@@ -419,7 +419,7 @@ export default {
       // let id = this.Member
       console.log("hello")
       console.log( "router id",this.$route.params.id)
-      axios.get(`http://127.0.0.1:3001/api/goldloan/${this.$route?.params?.id}`)
+      axios.get(`https://goldloanbackend.onrender.com/api/goldloan/${this.$route?.params?.id}`)
         .then(response => {
           this.AccountNumber = response.data.AccountNumber,
           this.SchemeName  = response.data.SchemeName,
@@ -523,7 +523,7 @@ export default {
 
 
     submitForm() {
-      axios.put(`http://127.0.0.1:3001/api/goldloan/${this.$route?.params?.id}`, {        
+      axios.put(`https://goldloanbackend.onrender.com/api/goldloan/${this.$route?.params?.id}`, {        
         
         AccountNumber: this.AccountNumber,
         SchemeName: this.SchemeName,
